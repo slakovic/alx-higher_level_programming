@@ -1,5 +1,8 @@
 #!/usr/bin/node
 /*
+   A js script that only prints the first argument passed to it on the
+   Terminal.
+
    Commandline arguments in js is made possible using the process.argv
    which is an array that contains all arguments of the CLI.
 
@@ -9,11 +12,12 @@
    which the js engine runs.
 
    so process.argv[2] ... contains users passed in arguments.
+
+   Author: Sammykingx
 */
-if (process.argv.length < 3) {
+const value = process.argv[2];
+if (value === undefined) {
   console.log('No argument');
-} else if (process.argv.length > 3) {
-  console.log('Arguments found');
 } else {
-  console.log('Argument found');
+  console.log(value);
 }

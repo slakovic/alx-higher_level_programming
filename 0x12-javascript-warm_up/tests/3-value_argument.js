@@ -9,11 +9,12 @@
    which the js engine runs.
 
    so process.argv[2] ... contains users passed in arguments.
+
+   for (item in array) starts its count at process.argv[2] and holds the
+   indexes
+
+   for (item of process.argv) holds the actual values
 */
-if (process.argv.length < 3) {
-  console.log('No argument');
-} else if (process.argv.length > 3) {
-  console.log('Arguments found');
-} else {
-  console.log('Argument found');
+for (const element of process.argv) {
+  console.log(element);
 }
