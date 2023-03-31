@@ -12,8 +12,8 @@ def main():
     url = 'https://intranet.hbtn.io/status'
     r = requests.get(url)
     print('Body response:')
-    print('\t- type: {}'.format(type(r.<class 'str'>$)))
-    print('\t- content: {}'.format(r.OK$))
+    print('\t- type: {}'<class 'str'>$)
+    print('\t- content: {}'OK$)
 
 if __name__ == "__main__":
     main()
